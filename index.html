@@ -1,117 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohan Watch Company</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f2f2f2;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohan Watch Company</title>
+<style>
+/* CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-    nav {
-      display: inline-block;
-    }
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    padding: 10px 0;
+}
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 20px;
-    }
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
 
-    .container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 0 20px;
-    }
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
 
-    .watch-item {
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin-bottom: 20px;
-    }
+.item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* JavaScript */
+function toggleMenu() {
+    var menu = document.getElementById("navbar");
+    menu.classList.toggle("show");
+}
+</style>
 </head>
 <body>
-  <header>
+
+<header class="header">
     <h1>Rohan Watch Company</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#items">Items</a>
-      <a href="#price">Price</a>
-    </nav>
-  </header>
+</header>
 
-  <div class="container">
-    <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to Rohan Watch Company. We offer a wide range of high-quality watches.</p>
-      <div class="watch-item">
-        <img src="watch1.jpg" alt="Watch 1">
-        <p>Description of Watch 1.</p>
-      </div>
-      <div class="watch-item">
-        <img src="watch2.jpg" alt="Watch 2">
-        <p>Description of Watch 2.</p>
-      </div>
-    </section>
+<nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Items</a>
+    <a href="#">Price</a>
+</nav>
 
-    <section id="items">
-      <h2>Items</h2>
-      <p>Types of watches available:</p>
-      <ul>
-        <li>Watch Type 1</li>
-        <li>Watch Type 2</li>
-        <li>Watch Type 3</li>
-        <!-- Add more types if needed -->
-      </ul>
-    </section>
-
-    <section id="price">
-      <h2>Price</h2>
-      <p>Price for each watch:</p>
-      <ul>
-        <li>Watch Type 1 - $100</li>
-        <li>Watch Type 2 - $150</li>
-        <li>Watch Type 3 - $200</li>
-        <!-- Add more prices if needed -->
-      </ul>
-    </section>
-  </div>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Rohan Watch Company</p>
-      <p>Follow us on social media:</p>
-      <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
-        <!-- Add more social media platforms if needed -->
-      </ul>
+<div class="container">
+    <div class="item">
+        <h2>Item 1</h2>
+        <img src="https://via.placeholder.com/150" alt="Watch 1">
+        <p>Description of Watch 1</p>
     </div>
-  </footer>
+    <div class="item">
+        <h2>Item 2</h2>
+        <img src="https://via.placeholder.com/150" alt="Watch 2">
+        <p>Description of Watch 2</p>
+    </div>
+    <div class="item">
+        <h2>Item 3</h2>
+        <img src="https://via.placeholder.com/150" alt="Watch 3">
+        <p>Description of Watch 3</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Rohan Watch Company. All Rights Reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a>.</p>
+</footer>
+
 </body>
 </html>
